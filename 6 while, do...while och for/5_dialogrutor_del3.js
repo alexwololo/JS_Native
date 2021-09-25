@@ -14,21 +14,14 @@
 
 // Ladda upp din lösning
 
-let x;
+
+let x
+
+do {
+  x = prompt('Vad heter du?')
+} while (x === null)
+
+
 for (x = prompt('input number'); x > 0; x--) {
   alert('alert')
 }
-
-let x;
-for (x = prompt('input number'); x === null; x--) {
-  prompt('input number')
-}
-
-
-let x
-do {
-  x = prompt('Vad heter du?')
-} while ((x === null && isNaN(x) === false))
-
-alert('Hej...')
-alert(x)
