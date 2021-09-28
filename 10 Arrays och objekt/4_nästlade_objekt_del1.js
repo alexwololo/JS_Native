@@ -5,3 +5,13 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+//o.a[0] === 1
+
+let o = {
+  a: [1]
+}
+
+// console.log(o.a[0])        // 0
+// console.log(o.a[0] === 1)    // false not true
+// console.log(typeof o.a[0]) //"number"
