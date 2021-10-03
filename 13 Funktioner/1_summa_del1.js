@@ -26,3 +26,8 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+// let f = function (a, b) {
+//   return a + b
+// }
+// console.log(f(2, 3));
