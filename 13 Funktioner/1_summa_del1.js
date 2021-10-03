@@ -31,3 +31,17 @@
 //   return a + b
 // }
 // console.log(f(2, 3));
+
+let sum = function (a) {
+
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result += Number(a[i]);
+  }
+  return result;
+}
+let numbers = [1, 2, 3]
+console.log(sum(numbers))
+
+
+//https://www.w3resource.com/javascript-exercises/javascript-math-exercise-17.php

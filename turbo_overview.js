@@ -67,8 +67,6 @@ for (let age = 0; age < 15; age++) {
 /**
  * FUNCTIONS
  */
-
-
 let f = function (name, lastName) {
   console.log(name + lastName)
   return name + lastName

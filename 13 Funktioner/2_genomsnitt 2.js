@@ -19,3 +19,32 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+//https://stackoverflow.com/questions/62053197/returning-null-from-an-empty-array
+//https://www.youtube.com/watch?v=uibEcNmGCi8
+
+// let a = (1+2+3) / 3;
+// console.log(a);
+
+let average = function (array) {
+
+  //check if array is empty
+  // if empty then average([]) returns null, use if statement.
+  if (average.length === [])
+    return null;
+
+  //sum values from array
+  const reducer = function (total, currentValue) {
+    return total + currentValue;
+  };
+  const sum = array.reduce(reducer)
+
+  //get length of array
+  //divide the array sum by the length
+  return sum / array.length;
+
+}
+let numbers = [];
+console.log(average(numbers));
+numbers = [1, 2, 3];
+console.log(average(numbers));
