@@ -11,6 +11,8 @@ if (age < 1) {
   alert('u are an adult')
 }
 
+
+
 /**
  * SWITCH
  * När man undersöker värdet av ett uttryck
@@ -29,6 +31,8 @@ switch (age) {
   default:
     alert('u answered wo capital letter')
 }
+
+
 
 /**
  * WHILE
@@ -51,6 +55,8 @@ do {
 } while (age === null)
 alert('Your age is ' + age);
 
+
+
 /**
  * FOR
  * for kan vara en “kompakt” ersättning till vissa typer av while-användningar
@@ -64,24 +70,54 @@ for (let age = 0; age < 15; age++) {
   console.log(age);
 }
 
+
+
 /**
  * FUNCTIONS
  */
-let f = function (name, lastName) {
-  console.log(name + lastName)
-  return name + lastName
+
+// function expression
+let f = function (names, lastName) {
+  console.log(names + lastName)
 }
 f('John ', 'Cena');
-////////////////////////////////
 
-let add = function (a, b) {
-  return a + b
-}
-let value = add(2, 3)
-console.log(value) // 5
-///////////////////////////////
+// let add = function (a, b) {
+//   return a + b
+// }
+// let value = add(2, 3)
+// console.log(value) // 5
+// //
+// let add = function (a, b) {
+//   return a + b
+// }
+// console.log(add(2, 3))
 
-let add = function (a, b) {
-  return a + b
+//function declaration
+function f(names, lastname) {
+  console.log(names + lastname)
 }
-console.log(add(2, 3))
+f('John ', 'Cena');
+
+//arrowfunction - ta bort function + {} + return & lägg till =>
+let f = (names, lastname) => names + lastname;
+f('John ', 'Cena');
+
+function f(x, y) {
+
+  let obj = {
+    k: x,
+    l: y
+  };
+  return obj;
+}
+let randomvar = f('a', 'd');
+console.log(randomvar);
+
+///() på rad under behövs för objekt, inte annars
+let f = (x, y) => ({ k: x, l: y })
+let randomvar = f('a', 'b')
+
+let f = (x, y) => [x, y]
+let randomvar = f('a', 'b')
+console.log(randomvar);
