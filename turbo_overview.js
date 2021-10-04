@@ -70,7 +70,22 @@ for (let age = 0; age < 15; age++) {
   console.log(age);
 }
 
+/**
+ * TERNERY
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+ */
 
+let age = 26
+if (age > 18) {
+  alert('beer');
+} else {
+  alert('milk')
+}
+console.log(age);
+
+let age = 26;
+let beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage); // "Beer"
 
 /**
  * FUNCTIONS

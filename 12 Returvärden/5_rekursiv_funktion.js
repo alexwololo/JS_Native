@@ -19,3 +19,29 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+//deklarera variable
+//tilldela funktion
+
+
+const factorial = function (n) {
+  return (n === 1 ? 1 : n * factorial(n - 1))
+}
+console.log(factorial(10))
+
+
+const factorial = (n) => (n === 1 ? 1 : n * factorial(n - 1))
+console.log(factorial(10))
+
+
+let age = 26
+if (age > 18) {
+  alert('beer');
+} else {
+  alert('milk')
+}
+console.log(age);
+
+let age = 26;
+let beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage); // "Beer"
