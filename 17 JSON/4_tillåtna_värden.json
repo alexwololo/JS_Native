@@ -1,0 +1,54 @@
+// Uppgift: Tillåtna värden
+// Instruktioner
+// Korrigera följande objekt genom att ta bort alla nyckel/värde-par, där värdet är otillåtet enligt JSON-formatet.
+
+// {
+//   "a": "",
+//   "b": " ",
+//   "c": "c",
+//   "d": 0,
+//   "e": -1,
+//   "f": 1,
+//   "g": NaN,
+//   "h": true,
+//   "i": false,
+//   "j": {},
+//   "k": [],
+//   "l": function () {},
+//   "m": () => {},
+//   "n": null,
+//   "o": undefined
+// }
+// Ladda upp din lösning
+
+{
+  "a": "",
+  "b": " ",
+  "c": "c",
+  "d": 0,
+  "e": -1,
+  "f": 1,
+  "g": NaN,
+  "h": true,
+  "i": false,
+  "j": {},
+  "k": [],
+  "l": function () {},
+  "m": () => {},
+  "n": null,
+  "o": undefined
+}
+
+{
+  "a": "",
+  "b": " ",
+  "c": "c",
+  "d": 0,
+  "e": -1,
+  "f": 1,
+  "h": true,
+  "i": false,
+  "j": {},
+  "k": [],
+  "n": null
+}

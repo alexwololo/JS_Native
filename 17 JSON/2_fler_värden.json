@@ -1,0 +1,14 @@
+// Uppgift: Fler värden
+// Instruktioner
+// Utöka lösningen från den föregående uppgiften så att objektet även innehåller ett boolean-värde och ett number-värde.
+// Ladda upp index.json.
+// Ladda upp din lösning
+// Ingen fil har valts
+// Resultat: Ej inskickad
+/**/
+{
+  "userName": "Bob",
+  "password": "secret",
+  "boolean": true,
+  "number" : 4
+}

@@ -1,0 +1,32 @@
+// Uppgift: En array
+// Instruktioner
+// Utöka lösningen från den föregående uppgiften så att filen, i sin “rot”, innehåller en JSON-array med tre objekt, där varje objekt har samma struktur som objektet i lösningen från den föregående uppgiften.
+
+// Vilka userName- och password-värden som används spelar ingen roll, men de måste vara strängar.
+
+// Ladda upp index.json.
+
+// Ladda upp din lösning
+
+[
+  {
+    "userName": "Bob",
+    "password": "secret",
+    "boolean": true,
+    "number" : 4
+  },
+
+  {
+    "userName": "Bob",
+    "password": "secret",
+    "boolean": true,
+    "number" : 4
+  },
+
+  {
+    "userName": "Bob",
+    "password": "secret",
+    "boolean": true,
+    "number" : 4
+  }
+]

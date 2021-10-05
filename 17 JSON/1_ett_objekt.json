@@ -1,0 +1,14 @@
+// Uppgift: Ett objekt
+// Instruktioner
+// Skapa en JSON-fil (inte en JavaScript-fil), index.json, som innehåller ett JSON-objekt som motsvarar nedanstående JavaScript-objekt:
+// {
+//   userName: 'Bob',
+//   password: 'secret'
+// }
+// Notera att JSON-filer inte får innehålla varken JavaScript-kod eller kommentarer.
+// Ladda upp index.json.
+// Ladda upp din lösning
+{
+  "userName": "Bob",
+  "password": "secret"
+}
