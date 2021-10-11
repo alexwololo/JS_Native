@@ -13,11 +13,5 @@
 const item =
   document.querySelector('#players')
 
-const items =
-item.lastElementChild.querySelectorAll('li')
 
-
-item.lastElementChild it will select last element which is ol
-then we will aagain apply
-item.lastElementChild.querySelectorAll('li')
-now will have all li elements
+const items = document.querySelectorAll('li')
