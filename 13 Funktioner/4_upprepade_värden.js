@@ -1,28 +1,42 @@
-// Uppgift: Summa: Del 1
+// Uppgift: Upprepade värden
 // Instruktioner
-// Skapa en variabel, sum, och tilldela en funktion till denna.
+// Skapa en variabel, repeat, och tilldela en funktion till denna.
 
-// Funktionen ska ta emot en array, som kan antas innehålla nummer. Funktionen ska också summera värdena i array:en, och returnera summan.
+// Funktionen ska ta emot två argument, där det andra argumentet kan antas vara ett heltal av typen number.
 
-// Koden…
+// Funktionen ska returnera en array med lika många värden som heltalet. De enda värdena som array:en får innehålla är värden som är identiska med värdet i den första parametern.
 
-// let numbers = [1, 2, 3]
-// console.log(sum(numbers))
-// … eller console.log(sum([1, 2, 3])), ska göra så att “6” loggas till webbläsarens konsol, eftersom 1 + 2 + 3 = 6.
+// repeat('test', 3) ska returnera en array lik ['test', 'test', 'test'].
 
-// På samma sätt ska sum([1, 2, 3, 4]) returnera 10, eftersom 1 + 2 + 3 + 4 = 10.
+// Använd en loop.
 
-// Utgå gärna, inuti funktionen, från en variabel som tilldelas numret 0, för att sedan addera talen i array:en i en loop, till exempel så här:
-
-// let sum = function (a) {
-//   let result = 0
-
-//   for(...) {
-//     // ...
-//   }
-
-//   return result
-// }
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+
+//skapa funktion
+//använd en loop för att iterera tester
+
+
+
+let repeat = function (string, num) {
+ return (string, num)
+
+
+}
+// should return an array like ['test', 'test', 'test']
+repeat('test', 3)
+
+
+
+function reverse(arr) {
+  let newArray = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
+let numbers = [1, 2, 3]
+console.log(reverse(numbers))
+console.log(reverse([1, 2, 3]))
