@@ -15,16 +15,40 @@
 // Ladda upp din lösning
 
 
-let x
+// will first check parseInt(number)
+// if true it will check other operator
+// and that is or operator
+// then it will inside loop
+// it parseInt(nmbr) is false null or undefined it will check next operator which is or then it will check second condition parseInt(nmbr) if its true it will run code inside
+// if other wise it will not run inside
+// if code
 
-do {
-  x = prompt('Vad heter du?')
-} while (x === null)
+while (true) {
+  let nmbr = prompt("Enter Number");
 
+  if (parseInt(nmbr) || parseInt(nmbr) === 0) {
+    for (let i = 1; i <= nmbr; i++) {
+      alert("Alert " + i + " times");
+    }
 
-for (x = prompt('input number'); x > 0; x--) {
-  alert('alert')
+    break;
+  }
 }
 
 
+//ELLER
 
+
+let s
+
+while (s === '' || isNaN(s) || s === null) {
+  s = prompt()
+}
+
+for (let n = Number(s); n > 0; n--) {
+  alert()
+}
+
+
+//for lop som presenterar promptdialogrutor så länge användaren skriver ngt annat än number eller trycker på avbryt
+//for loop som visar antalet önskade alertrutor som i fööra uppgiften
