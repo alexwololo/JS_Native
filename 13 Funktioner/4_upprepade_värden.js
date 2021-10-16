@@ -19,7 +19,16 @@
 //använd en loop för att iterera tester
 
 
+let repeatVariable = repeatFun('test', 3);
 
+function repeatFun(value, num) {
+  let returnedArr = [];
+  for (let i = 0; i < num; i++) {
+    returnedArr[i] = value;
+  }
+  return returnedArr;
+}
+console.log("repeat  ", repeatVariable)
 
 const repeat = function(str, nmbr) {
   let data = [];

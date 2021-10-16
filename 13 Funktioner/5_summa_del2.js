@@ -32,6 +32,7 @@ console.log(" sum(2, 2,33) SUM is ", sum(2, 2, 33));
 function sum() {
   let sum = 0;
   for (let i = 0; i < arguments.length; i++) {
+    //arguments is a array of value passed to this function
     sum += arguments[i];
   }
   return sum;
