@@ -25,4 +25,14 @@
 // }
 // Ladda upp index.js.
 
-// Ladda upp din lösning
+// Ladda upp din lösning   console.log("sum(2, 30) SUM is ",sum(2, 30)) ;
+
+console.log(" sum(2, 2,33) SUM is ", sum(2, 2, 33));
+
+function sum() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}

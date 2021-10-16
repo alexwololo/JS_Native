@@ -20,23 +20,22 @@
 
 
 
-let repeat = function (string, num) {
- return (string, num)
 
-
-}
-// should return an array like ['test', 'test', 'test']
-repeat('test', 3)
-
-
-
-function reverse(arr) {
-  let newArray = [];
-  for (let i = arr.length - 1; i >= 0; i--) {
-    newArray.push(arr[i]);
+const repeat = function(str, nmbr) {
+  let data = [];
+  for (let i = 0; i < nmbr; i++) {
+    data.push(str);
   }
-  return newArray;
-}
-let numbers = [1, 2, 3]
-console.log(reverse(numbers))
-console.log(reverse([1, 2, 3]))
+  return data;
+};
+//or
+
+const repeat = function(str, nmbr) {
+  let data = [];
+  for (let i = 0; i < nmbr; i++) {
+    data.push(str);
+  }
+  return data;
+};
+repeat('test', 3);
+console.log("repeat  ", repeat)
