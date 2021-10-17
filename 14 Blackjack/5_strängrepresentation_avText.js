@@ -46,6 +46,7 @@ console.log(
 
 function prettyCard(cardobj) {
   let suitImg = '';
+
   let finalvalue = '';
   switch (cardobj.suit) {
     case 'HEARTS':
@@ -63,7 +64,7 @@ function prettyCard(cardobj) {
     default:
       suitImg = 'Invalid Object Value';
   }
-  switch (cardobj.value) {
+  switch (cardobj.value) { //switch statement for value
     case 1:
       finalvalue = 'A';
       break;
