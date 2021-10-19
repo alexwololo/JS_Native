@@ -8,20 +8,24 @@
 
 // Ladda upp din lösning
 
-let id = prompt('Enter ID')
+//PUT replace the whole version while PATCH replace just the passed version
+
+
+
+let ide = prompt('Enter ID')
 let city = prompt('Enter new cityname');
 let pop = prompt('Enter population');
 
-fetch("https://avancera.app/cities/", {
+fetch("https://avancera.app/cities/" + ide, {
     body: JSON.stringify({
-      id: id,
+      id: ide,
       name: city,
-      population: pop,
+      population: pop
     }),
     headers: {
       "Content-Type": "application/json",
     },
-    method: "POST",
+    method: "PUT",
   })
   .then((response) => response.json())
   .then((result) => {

@@ -22,14 +22,16 @@ fetch('https://avancera.app/cities/', {
     console.log(result)
   })
 
-//eller
+//or
 
 let city = prompt("Enter new cityname");
 let pop = prompt("Enter population");
-fetch("https://avancera.app/cities/", {
+pop =
+
+  fetch("https://avancera.app/cities/", {
     body: JSON.stringify({
       name: city,
-      population: pop,
+      population: pop
     }),
     headers: {
       "Content-Type": "application/json",

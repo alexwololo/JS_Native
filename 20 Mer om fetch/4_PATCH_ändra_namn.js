@@ -17,24 +17,21 @@
 // Ladda upp din lösning
 
 
-// PATCH to the resource id = 1
-// update that task is completed
-fetch(‘https: //jsonplaceholder.typicode.com/todos/1', {
-method: 'PATCH',
-body: JSON.stringify({
-  completed: true
-}),
-headers: {“
-  Content - type”: “application / json;charset = UTF - 8”
-}
-})
-.then(response => response.json())
-  .then(json => console.log(json))
-  /* will return
-  {
-  “userId”: 1,
-  “id”: 1,
-  “title”: “delectus aut autem”,
-  “completed”: true
-  }
-  */
+
+
+let ide = prompt('Enter ID')
+let city = prompt('Enter new cityname');
+
+fetch("https://avancera.app/cities/" + ide, {
+    body: JSON.stringify({
+      name: city
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    method: "PATCH",
+  })
+  .then((response) => response.json())
+  .then((result) => {
+    console.log(result);
+  });
