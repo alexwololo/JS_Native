@@ -1,4 +1,10 @@
 /**
+ *https://stackoverflow.com/questions/11954152/whats-the-difference-between-console-dir-and-console-log
+ */
+console.dir(document)
+console.log(document);
+
+/**
  * IF
  * if kör kodblocket noll eller en gång
  */
@@ -92,7 +98,7 @@ console.log(beverage); // "Beer"
  */
 
 // function expression
-let f = function (names, lastName) {
+let f = function(names, lastName) {
   console.log(names + lastName)
 }
 f('John ', 'Cena');

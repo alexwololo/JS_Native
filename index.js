@@ -1,61 +1,10 @@
-const prettyCard = function(cardobj) {
-  let suitImg = "";
+//console.dir(document)
+console.log(document.getElementById('heading')) // h1-elementet
+console.log(document.getElementsByTagName('p')) // “Array-like” med båda p-elementen (och blankstegtexten)
+console.log(document.getElementsByClassName('introduction')) // “Array-like” med endast ett p-element
+console.log(document.querySelector('body > p')) // Det första p-elementet
+console.log(document.querySelectorAll('body > p')) // “Array-like” med båda p-elementen
 
-  let finalvalue = "";
-  switch (cardobj.suit) {
-    case 'HEARTS':
-      suitImg = '\u2665';
-      break;
-    case 'SPADES':
-      suitImg = '\u2660';
-      break;
-    case 'DIAMONDS':
-      suitImg = '\u2666';
-      break;
-    case 'CLUBS':
-      suitImg = '\u2663';
-      break;
-    default:
-      suitImg = 'Invalid Object Value';
-  }
-  switch (cardobj.value) {
-    case 1:
-      finalvalue = 'A';
-      break;
-    case 10:
-      finalvalue = 'T';
-      break;
-    case 11:
-      finalvalue = 'J';
-      break;
-    case 12:
-      finalvalue = 'Q';
-      break;
-    case 13:
-      finalvalue = 'K';
-      break;
-    default:
-      finalvalue = cardobj.value.toString();
-  }
-  return finalvalue + "" + suitImg;
-}
-console.log(
-  prettyCard({
-    "suit": 'HEARTS',
-    "value": 1
-  }));
-console.log(
-  prettyCard({
-    "suit": 'CLUBS',
-    "value": 2
-  }));
-console.log(
-  prettyCard({
-    "suit": 'SPADES',
-    "value": 10
-  }));
-console.log(
-  prettyCard({
-    "suit": 'DIAMONDS',
-    "value": 11
-  }));
+const ele = document.getElementById('heading');
+console.log(ele);
+console.dir(ele);

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+  <div id="page">
+    <h1 id="header">List</h1>
+    <h2>Buy groceries</h2>
+    <ul>
+      <li id="one" class="hot"><em>fresh</em> figs</li>
+      <li id="two" class="hot">pine nuts</li>
+      <li id="three" class="hot">honey</li>
+      <li id="four">balsam vinegar</li>
+    </ul>
+
+    <div id="some-element">Hej <strong>Alice</strong>!</div>
+
+    <script>
+      console.log(document.body);
+      console.dir(document.body);
+      //Method that returns single element node
+      console.log('Method that returns single element node');
+      console.log(document.getElementById('one'));
+      console.log(document.querySelector('li.hot'));
+
+      //Method that returns one or more element nodes
+      console.log('Method that returns one or more element nodes');
+      console.log(document.getElementsByClassName('hot'));
+      console.log(document.getElementsByTagName('li'));
+      console.log(document.querySelectorAll('li.hot'));
+
+      //DOM queries that return Nodelists
+      console.log('DOM queries that return Nodelists');
+      console.log(document.getElementsByTagName('h1'));
+      console.log(document.getElementsByTagName('li'));
+      console.log(document.querySelectorAll('li[id]'));
+
+      //If i will use same node many timesasign it to variable
+      let ele = document.querySelectorAll('li.hot')
+      console.log(ele[1]);
+      console.log(ele.length);
+
+      //Access childnodes
+      console.log('Access childnodes');
+      let element = document.querySelector('#some-element')
+      console.dir(element.children) // Barnelement
+      console.dir(element.childNodes) // Barnnoder
+    </script>
+  </div>
+</body>
+
+</html>
