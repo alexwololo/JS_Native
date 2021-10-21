@@ -7,10 +7,20 @@
 </head>
 
 <body>
-  <h1 id="heading">Hej!</h1>
-  <p class="introduction">Välkommen!</p>
-  <p>...</p>
-  <script src="index.js"></script>
+  <section id="players">
+    <h1>Spelare</h1>
+    <ol>
+      <li>Alice</li>
+      <li>Bob</li>
+      <li>Cesar</li>
+    </ol>
+  </section>
+  <script>
+    let removeEl = document.getElementsByTagName('li')[2];
+    let containerEl = removeEl.parentNode;
+    containerEl.removeChild(removeEl);
+
+  </script>
 </body>
 
 </html>
