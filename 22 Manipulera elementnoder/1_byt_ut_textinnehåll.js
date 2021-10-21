@@ -19,3 +19,10 @@ Använd textContent.
 
 
 */
+let ele = document.querySelector('h1');
+ele.textContent = "Hello World!";
+
+//eller
+
+document.querySelector('h1').textContent = "Hello World!";
+console.log(document.querySelector('h1'));

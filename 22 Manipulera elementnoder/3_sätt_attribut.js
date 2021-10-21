@@ -32,6 +32,11 @@ Din lösning
   </body>
 </html>
 
-
-
+https://stackoverflow.com/questions/62026918/setting-attributes-using-javascript/62027020
 */
+
+document.querySelector('#players ol').setAttribute('type', 'i')
+
+//or
+
+document.querySelector('ol').setAttribute('type', 'i')

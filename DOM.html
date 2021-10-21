@@ -22,35 +22,40 @@
     <div id="some-element">Hej <strong>Alice</strong>!</div>
 
     <script>
-      console.log(document.body);
-      console.dir(document.body);
-      //Method that returns single element node
-      console.log('Method that returns single element node');
-      console.log(document.getElementById('one'));
-      console.log(document.querySelector('li.hot'));
+      // console.log(document.getElementsByTagName('h1'));
+      // let element = document.getElementsByTagName('h1');
+      // let replace = 'Hello World!';
+      // element.textContent = replace;
+      // console.log(element.textContent);
 
-      //Method that returns one or more element nodes
-      console.log('Method that returns one or more element nodes');
-      console.log(document.getElementsByClassName('hot'));
-      console.log(document.getElementsByTagName('li'));
-      console.log(document.querySelectorAll('li.hot'));
+      // console.log(document.body);
+      // console.dir(document.body);
+      // //Method that returns single element node
+      // console.log('Method that returns single element node');
+      // console.log(document.getElementById('one'));
+      // console.log(document.querySelector('li.hot'));
 
-      //DOM queries that return Nodelists
-      console.log('DOM queries that return Nodelists');
-      console.log(document.getElementsByTagName('h1'));
-      console.log(document.getElementsByTagName('li'));
-      console.log(document.querySelectorAll('li[id]'));
+      // //Method that returns one or more element nodes
+      // console.log('Method that returns one or more element nodes');
+      // console.log(document.getElementsByClassName('hot'));
+      // console.log(document.getElementsByTagName('li'));
+      // console.log(document.querySelectorAll('li.hot'));
 
-      //If i will use same node many timesasign it to variable
-      let ele = document.querySelectorAll('li.hot')
-      console.log(ele[1]);
-      console.log(ele.length);
+      // //DOM queries that return Nodelists
+      // console.log('DOM queries that return Nodelists');
+      // console.log(document.getElementsByTagName('li'));
+      // console.log(document.querySelectorAll('li[id]'));
 
-      //Access childnodes
-      console.log('Access childnodes');
-      let element = document.querySelector('#some-element')
-      console.dir(element.children) // Barnelement
-      console.dir(element.childNodes) // Barnnoder
+      // //If i will use same node many timesasign it to variable
+      // let ele = document.querySelectorAll('li.hot')
+      // console.log(ele[1]);
+      // console.log(ele.length);
+
+      // //Access childnodes
+      // console.log('Access childnodes');
+      // let element = document.querySelector('#some-element')
+      // console.dir(element.children) // Barnelement
+      // console.dir(element.childNodes) // Barnnoder
     </script>
   </div>
 </body>

@@ -28,6 +28,7 @@ Din lösning
   </body>
 </html>
 
-
-
+https://stackoverflow.com/questions/62483001/queryselector-with-last-child-returns-null-when-there-is-an-element-without-cl
 */
+
+document.querySelector('#players ol li:last-child').style.color = '#c00';
