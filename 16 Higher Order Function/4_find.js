@@ -17,3 +17,12 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+
+let find = function(a, f) {
+  for (let n = 0; n < a.length; n++) {
+    if (f(a[n])) {
+      return a[n]
+    }
+  }
+}

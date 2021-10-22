@@ -1,4 +1,4 @@
-let deck = [{ // json Array of 52  card objecT
+let deck = [{
   "suit": 'HEARTS',
   "value": 1
 }, {
@@ -155,10 +155,10 @@ let deck = [{ // json Array of 52  card objecT
   "suit": 'CLUBS',
   "value": 13
 }, ]
-console.log(deck.length); // To geT json Array lengTh
+console.log(deck.length);
 console.log(draw(deck));
 
 function draw(deckArr) {
-  return deckArr.pop() //  To remove lasT json Array elemenT
+  return deckArr.pop()
 }
-console.log(deck.length); // To geT json Array lengTh one less
+console.log(deck.length);

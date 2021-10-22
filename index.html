@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
+  <title>Öka eller minska ett värde: Del 2</title>
 </head>
 
-<body>
-  <section id="players">
-    <h1>Spelare</h1>
-    <ol>
-      <li>Alice</li>
-      <li>Bob</li>
-      <li>Cesar</li>
-    </ol>
-  </section>
+<body style="margin: 0; min-height: 100vh;">
+  <div id="value"></div>
+  <input id="decrease" type="button" value="Minska">
+  <input id="increase" type="button" value="Öka">
   <script>
-    let removeEl = document.getElementsByTagName('li')[2];
-    let containerEl = removeEl.parentNode;
-    containerEl.removeChild(removeEl);
+    let btnInc = document.getElementById("increase")
+    let btnDec = document.getElementById("decrease")
 
+    let element = document.getElementById("value")
+    element.textContent = 1
+
+    function displayDialogBox() {
+      element.textContent = Number(element.textContent) + 1
+    }
+
+    btnInc.addEventListener('click', displayDialogBox)
+    btnDec.addEventListener('click', displayDialogBox2)
+
+    function displayDialogBox2() {
+      if (Number(element.textContent) <= 1) {
+
+      } else {
+        element.textContent = Number(element.textContent) - 1
+      }
+    }
   </script>
 </body>
 

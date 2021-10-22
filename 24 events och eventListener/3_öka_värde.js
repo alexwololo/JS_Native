@@ -10,12 +10,26 @@
 
 // Din lösning
 
-element.textContent = Number(element.textContent) + 1.
+// <!DOCTYPE html>
+// <html lang="sv">
+//   <head>
+//     <meta charset="utf-8">
+//     <title>Öka ett värde</title>
+//   </head>
+//   <body style="margin: 0; min-height: 100vh;">
+//     <div id="value"></div>
+//     <input id="increase" type="button" value="Öka">
+//     <script src="index.js"></script>
+//   </body>
+// </html>
 
-let x = document.querySelector('#increase')
-let y = document.querySelector('#button')
+
+let element = document.getElementById("value")
+element.textContent =  1
+
+let btn = document.getElementById("increase")
 
 function displayDialogBox() {
-  element.textContent = Number(element.textContent) + 1.
+  element.textContent = Number(element.textContent) + 1
 }
-element.addEventListener('click', displayDialogBox)
+btn.addEventListener('click', displayDialogBox)
