@@ -3,34 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Öka eller minska ett värde: Del 2</title>
+  <title>Ett “lokalt” värde</title>
 </head>
 
-<body style="margin: 0; min-height: 100vh;">
-  <div id="value"></div>
-  <input id="decrease" type="button" value="Minska">
-  <input id="increase" type="button" value="Öka">
+<body>
   <script>
-    let btnInc = document.getElementById("increase")
-    let btnDec = document.getElementById("decrease")
-
-    let element = document.getElementById("value")
-    element.textContent = 1
-
-    function displayDialogBox() {
-      element.textContent = Number(element.textContent) + 1
-    }
-
-    btnInc.addEventListener('click', displayDialogBox)
-    btnDec.addEventListener('click', displayDialogBox2)
-
-    function displayDialogBox2() {
-      if (Number(element.textContent) <= 1) {
-
-      } else {
-        element.textContent = Number(element.textContent) - 1
-      }
-    }
+    let x = 'Test'
   </script>
 </body>
 

@@ -11,3 +11,14 @@
 // Använd inte den i JavaScript inbyggda filter-funktionen.
 
 // Ladda upp din lösning
+function filter(arr, func) {
+  let newArr = [];
+  arr.forEach((ele) => {
+    func(ele) ? newArr.push(ele) : null;
+  });
+  return newArr;
+}
+
+function func(ele) {
+  return ele >= 10 || ele % 2 === 0;
+}
