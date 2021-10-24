@@ -18,5 +18,9 @@
 
 // localStorage.getItem('a') !== null && localStorage.getItem('a') === sessionStorage.getItem('b')
 
-localStorage.setItem('a', 'green')
-sessionStorage.setItem('b', 'green')
+let onPress = function(e) {
+  console.log(e.key)
+}
+
+
+addEventListener('keydown', onPress)

@@ -17,3 +17,27 @@
 // Ladda upp index.js.
 
 // Ladda upp din lösning
+
+let id = prompt("Enter ID");
+let name = prompt("Enter new City Name");
+let population = prompt("Enter new Population");
+
+let data = {};
+if (name) {
+  data.name = name;
+}
+if (population) {
+  data.population = population;
+}
+
+fetch("https://avancera.app/cities/" + id, {
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "application/json",
+  },
+  method: "PATCH",
+})
+  .then((response) => response.json())
+  .then((result) => {
+    console.log(result);
+  });

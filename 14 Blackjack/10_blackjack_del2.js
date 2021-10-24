@@ -97,3 +97,35 @@ function score(deckarray) {
   }
   return totalScoreCalcu;
 }
+
+
+//or
+
+
+
+function score(cards) {
+  let ace = false,
+    score = 0
+
+  for (let n = 0; n < cards.length; n++) {
+    switch (cards[n].value) {
+      case 1:
+        ace = true
+        score += 1
+        break
+      case 11:
+      case 12:
+      case 13:
+        score += 10
+        break
+      default:
+        score += cards[n].value
+    }
+  }
+
+  if (ace && score <= 11) {
+    score += 10
+  }
+
+  return score
+}

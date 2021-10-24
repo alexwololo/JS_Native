@@ -39,3 +39,18 @@ Din lösning
 
 
 */
+
+const li = document.getElementsByTagName("li");
+
+for (let i = 0; i < li.length; i++) {
+  li[i].innerHTML += " <span class ='credits'>100 credits</span>";
+}
+
+
+//OR
+
+const li = document.getElementsByTagName("li");
+const text = "<span class ='credits'>100 credits</span>"
+for (let i = 0; i < li.length; i++) {
+  li[i].innerHTML += text;
+}
