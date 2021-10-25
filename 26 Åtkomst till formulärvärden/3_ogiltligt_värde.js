@@ -18,9 +18,28 @@
 
 // localStorage.getItem('a') !== null && localStorage.getItem('a') === sessionStorage.getItem('b')
 
-let onPress = function(e) {
-  console.log(e.key)
+let name = document.querySelector('#name')
+let send = document.querySelector('#send')
+let greet= document.querySelector('#greeting')
+let errors = document.querySelector('#errors')
+let button =document.querySelector('#send')
+
+button.disabled = true;
+document.getElementById('errors').style.display = 'block'
+
+function myF(){
+if (name.value === "" || name.value === undefined){
+    button.disabled = true;
+    document.getElementById('errors').style.display = 'block'
+    greet.textContent = ''
 }
-
-
-addEventListener('keydown', onPress)
+else{button.disabled = false;
+document.getElementById('errors').style.display = 'none'
+    function x(){
+    let namnet = document.getElementById("name").value;
+    greet.textContent = 'Hej ' + namnet + '!'
+    }
+    send.addEventListener('click', x)
+}
+    }
+    name.addEventListener('input',myF)

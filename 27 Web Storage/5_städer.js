@@ -15,3 +15,15 @@
 //     <script src="index.js"></script>
 //   </body>
 // </html>
+
+let promise = fetch("https://avancera.app/cities/");
+
+  promise
+    .then((response) => {
+      let someOtherPromise = response.json();
+
+      return someOtherPromise;
+    })
+    .then((result) => {
+      localStorage.setItem("cities", JSON.stringify(result));
+    });

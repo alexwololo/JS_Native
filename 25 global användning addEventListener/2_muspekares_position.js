@@ -22,10 +22,10 @@
 //   </body>
 // </html>
 
-let element = document.querySelector('#button')
 
-function displayDialogBox() {
-  console.log('hello');
+let onClick = function(e) {
+  console.log(e.pageX)
 }
 
-addEventListener('click', displayDialogBox)
+
+addEventListener('click', onClick)

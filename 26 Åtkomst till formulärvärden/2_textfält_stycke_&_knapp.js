@@ -24,8 +24,17 @@
 //   </body>
 // </html>
 
-let onClick = function(e) {
-  console.log(e.pageX)
+let send = document.querySelector('#send')
+let name = document.querySelector('#name')
+let greet = document.querySelector('#greeting')
+let button =document.querySelector('#send')
+let errors = document.querySelector('#errors')
+
+let myF = function() {
+
+  let x = document.getElementById("name").value;
+  greet.textContent = 'Hej ' + x + '!'
+
 }
 
-addEventListener('click', onClick)
+send.addEventListener('click', myF)
